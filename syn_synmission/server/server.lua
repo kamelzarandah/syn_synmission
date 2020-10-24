@@ -13,7 +13,7 @@ AddEventHandler('syn:AddSomeMoney', function()
     local Character = VorpCore.getUser(_source).getUsedCharacter
     Character.addCurrency(0, price)
     Character.addXp(xp)
-    VorpInv.addItem(source, synpackage, 1)
+    VorpInv.addItem(source, "synpackage", 1)
 
 end)
 
